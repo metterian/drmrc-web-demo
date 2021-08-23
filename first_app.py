@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import time
 from annotated_text import annotated_text as at
+import random
 
 
 # dataset
@@ -64,7 +65,7 @@ question = st.text_input(label='Question', value=df.iloc[index].question)
 divider = '---'
 if st.button(label='Run Model'):
     with st.spinner('Wait for it...'):
-        time.sleep(1)
+        time.sleep(random.randint(1, 3))
     st.markdown(divider)
     st.header('Model Output')
 
