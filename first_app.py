@@ -43,6 +43,15 @@ df = pd.DataFrame({
          ('삼진', '', "#8ef"), ' 처리 했다.']
     ]
 })
+# set page title
+st.set_page_config(
+    page_title='DRMRC Demo | NLP & AI Lab',
+    page_icon='💵',
+    layout='wide',
+    initial_sidebar_state="expanded",
+
+)
+
 
 # title
 st.title('Discrete Reasoning MRC(DRMRC) Demo')
