@@ -43,15 +43,25 @@ df = pd.DataFrame({
          ('삼진', '', "#8ef"), ' 처리 했다.']
     ]
 })
+
+
 # set page title
 st.set_page_config(
     page_title='DRMRC Demo | NLP & AI Lab',
     page_icon='💵',
-    layout='wide',
+    # layout='wide',
     initial_sidebar_state="expanded",
 
 )
 
+# set page setting
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # title
 st.title('Discrete Reasoning MRC(DRMRC) Demo')
@@ -89,3 +99,10 @@ if st.button(label='Run Model'):
     # Question
     st.subheader('Question')
     st.write(df.iloc[index].question)
+
+
+for _ in range(10):
+    st.write('\n')
+
+st.write(
+    """Created by: Kim Kyeongmin, Lee SeungJun, Lee SeungHoon, NLP & AI Lab (고려대학교)""")
