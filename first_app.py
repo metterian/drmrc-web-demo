@@ -105,4 +105,4 @@ for _ in range(10):
     st.write('\n')
 
 st.write(
-    """Created by: Kim Kyeongmin, Lee SeungJun, Lee SeungHoon, NLP & AI Lab (고려대학교)""")
+    """Created by: Gyeongmin Kim, SeungJun Lee, SeungHoon Lee, NLP & AI Lab (고려대학교)""")
